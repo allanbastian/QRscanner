@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adgvit.qr.QRActivity">
+
+    <TextView
+        android:id="@+id/nameHolder"
+        android:text="Name"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:text="xyz"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/regNumHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/regNumHolder"
+        android:text="Registration No"
+        android:textSize="24sp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameHolder"/>
+
+    <TextView
+        android:id="@+id/textViewRegNum"
+        android:text="16BCB0015"
+        android:textSize="24sp"
+        android:layout_below="@+id/textViewName"
+        android:layout_toEndOf="@+id/regNumHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn"
+        android:text="SCAN QR CODE"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
